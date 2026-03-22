@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1E3A5F;
+  --color-primary-light: #4A90D9;
+  --color-accent: #4A90D9;
+  --color-success: #4CAF50;
+  --color-warning: #F5A623;
+  --color-danger: #E74C3C;
+  --color-purple: #9B59B6;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F7FA;
+  --text-primary: #1E3A5F;
+  --text-secondary: #6B7B8C;
+  --border-color: #E8ECF0;
+}
+
+.dark {
+  --bg-primary: #0D1B2A;
+  --bg-secondary: #1B2838;
+  --text-primary: #E0E6ED;
+  --text-secondary: #8B9AAB;
+  --border-color: #2A3A4D;
+  --color-primary-light: #00D4FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
